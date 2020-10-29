@@ -46,6 +46,11 @@ public class Menu_act extends AppCompatActivity {
 
     // Intent Explícito.
 
+    public void CRUD(){
+        Intent i = new Intent(this, Db_act.class);
+        startActivity(i);
+    }
+
     public void Maps(View v) {
         Intent i = new Intent(this, Maps_act.class);
         startActivity(i);
@@ -69,7 +74,6 @@ public class Menu_act extends AppCompatActivity {
 
         planes.add("xtreme");
         planes.add("mindfullness");
-        planes.add("Premium");
 
         Intent i = new Intent(this, Clientes_act.class);
         i.putExtra("listaClientes", clientes); // preparo el dato que quiero envíar.

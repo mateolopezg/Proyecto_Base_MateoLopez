@@ -11,6 +11,7 @@
         android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:onClick="Calcular"
         android:text="Calcular"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +35,7 @@
         android:layout_width="287dp"
         android:layout_height="139dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="95dp"
+        android:layout_marginBottom="50dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/textViewMontoFinal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +48,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Ingrese Monto a Pagar"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
     </LinearLayout>
 
     <Spinner
@@ -63,8 +64,7 @@
         android:id="@+id/textViewMontoFinal"
         android:layout_width="268dp"
         android:layout_height="68dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginBottom="35dp"
         android:hint="Monto final"
         android:textSize="25sp"
         android:textStyle="bold"
