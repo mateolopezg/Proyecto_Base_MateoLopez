@@ -8,7 +8,7 @@
     tools:context=".Clientes_act">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Calcular"
@@ -17,11 +17,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMontoFinal"
         app:layout_constraintVertical_bias="0.211" />
 
     <Spinner
-        android:id="@+id/spnClientes"
+        android:id="@+id/spinnersClientes"
         android:layout_width="311dp"
         android:layout_height="57dp"
         android:layout_marginTop="64dp"
@@ -34,13 +34,15 @@
         android:layout_width="287dp"
         android:layout_height="139dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="95dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMontoFinal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnPlanes">
+        app:layout_constraintTop_toBottomOf="@+id/spinnersPlanes">
 
         <EditText
-            android:id="@+id/et1"
+            android:id="@+id/editTextMontoPagar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -49,22 +51,24 @@
     </LinearLayout>
 
     <Spinner
-        android:id="@+id/spnPlanes"
+        android:id="@+id/spinnersPlanes"
         android:layout_width="311dp"
         android:layout_height="57dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnClientes" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnersClientes" />
 
     <TextView
-        android:id="@+id/tv"
+        android:id="@+id/textViewMontoFinal"
         android:layout_width="268dp"
         android:layout_height="68dp"
         android:layout_marginTop="40dp"
+        android:layout_marginBottom="43dp"
         android:hint="Monto final"
-        android:textSize="35sp"
+        android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
