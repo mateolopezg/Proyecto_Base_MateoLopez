@@ -9,6 +9,17 @@ public class Insumo {
     public Insumo() {
     }
 
+    public Insumo(int precio, int stock) {
+        this.precio = precio;
+        this.stock = stock;
+    }
+
+    public Insumo(String nombre, int precio, int stock) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
+
     public Insumo(int codigo, String nombre, int precio, int stock) {
         this.codigo = codigo;
         this.nombre = nombre;

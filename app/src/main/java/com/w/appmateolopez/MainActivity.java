@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements IComunicacion {
 
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         btnLogin    = (Button)findViewById(R.id.btnLogin);
-        nombre      = (TextView)findViewById(R.id.editTextNombre);
+        nombre      = (TextView)findViewById(R.id.editTNombre);
         password    = (TextView)findViewById(R.id.editTextPassword);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {

@@ -11,6 +11,8 @@ import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 
+import Clases.Item_act;
+
 public class Menu_act extends AppCompatActivity {
 
     private ViewFlipper vf;
@@ -46,8 +48,8 @@ public class Menu_act extends AppCompatActivity {
 
     // Intent Explícito.
 
-    public void CRUD(){
-        Intent i = new Intent(this, Db_act.class);
+    public void CRUD(View v){
+        Intent i = new Intent(this, Item_act.class);
         startActivity(i);
     }
 

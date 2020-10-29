@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppMateoLopez">
-        <activity android:name=".Insumos_act"></activity>
+        <activity android:name="Clases.Item_act"></activity>
+        <activity android:name=".Insumos_act" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -31,7 +32,6 @@
         <activity
             android:name=".Maps_act"
             android:label="@string/title_activity_maps_act" />
-        <activity android:name=".Db_act" />
         <activity android:name=".Clientes_act" />
         <activity android:name=".Info_act" />
         <activity android:name=".Menu_act" />

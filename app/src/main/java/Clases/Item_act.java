@@ -1,14 +1,14 @@
-package com.w.appmateolopez;
+package Clases;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Db_act extends AppCompatActivity {
+public class Item_act extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_db_act);
+        //setContentView(R.layout.activity_item_act);
     }
 }

@@ -41,7 +41,7 @@
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editTextNombre"
+            android:id="@+id/editTNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -81,23 +81,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Guardar" />
-
-        <Button
-            android:id="@+id/btnMostrar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mostrar" />
-
-        <Button
-            android:id="@+id/btnEliminar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Eliminar" />
-
-        <Button
-            android:id="@+id/btnActualizar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Actualizar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
