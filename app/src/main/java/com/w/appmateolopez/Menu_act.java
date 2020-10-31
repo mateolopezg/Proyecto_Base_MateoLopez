@@ -45,7 +45,7 @@ public class Menu_act extends AppCompatActivity {
 
     // Intent Explícito.
 
-    public void CRUD(View v){
+    public void CRUD(View v) {
         Intent i = new Intent(this, Insu_act.class);
         startActivity(i);
     }
@@ -56,8 +56,8 @@ public class Menu_act extends AppCompatActivity {
     }
 
     public void Info(View v) {
-      //  Intent i = new Intent(this, Info_act.class);
-        //startActivity(i);
+        Intent i = new Intent(this, Info_act.class);
+        startActivity(i);
     }
 
     public void Clientes(View v) {
