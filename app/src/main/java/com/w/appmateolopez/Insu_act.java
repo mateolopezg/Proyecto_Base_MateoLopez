@@ -33,8 +33,6 @@ public class Insu_act extends AppCompatActivity {
         btnEditar = (Button) findViewById(R.id.btnEditar);
         btnGuardar = (Button) findViewById(R.id.btnGuardar);
         btnMostrar = (Button) findViewById(R.id.btnMostrar);
-
-
     }
 
     public void insertar(View v) {
@@ -50,9 +48,8 @@ public class Insu_act extends AppCompatActivity {
                     if (isInsert == true)
                         Toast.makeText(Insu_act.this, "Data Inserted", Toast.LENGTH_SHORT).show();
                     else
-                        Toast.makeText(Insu_act.this, "Data Inserted", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Insu_act.this, "Data Not Inserted", Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
-                    Toast.makeText(Insu_act.this, "Error ", Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                 }
 
@@ -92,6 +89,46 @@ public class Insu_act extends AppCompatActivity {
         builder.setTitle(title);
         builder.setMessage(message);
         builder.show();
+    }
+
+    public void update(View v){
+        btnEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    String c = codigo.getText().toString();
+                    String p = precio.getText().toString();
+                    String s = stock.getText().toString();
+                    String n = nombre.getText().toString();
+                    boolean isUpdate = db.update(c, n, p, s );
+                    if (isUpdate)
+                        Toast.makeText(Insu_act.this, "Data Update", Toast.LENGTH_SHORT).show();
+                    else
+                        Toast.makeText(Insu_act.this, "Data Not Update", Toast.LENGTH_SHORT).show();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
+
+    public void delete(View v){
+        btnBorrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    String c = codigo.getText().toString();
+                    Integer deleteRows = db.delete(c);
+                    if (deleteRows > 0)
+                        Toast.makeText(Insu_act.this, "Deleted Data", Toast.LENGTH_SHORT).show();
+                    else
+                        Toast.makeText(Insu_act.this, "Data Not Deleted", Toast.LENGTH_SHORT).show();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
 }

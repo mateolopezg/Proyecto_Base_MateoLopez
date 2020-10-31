@@ -41,12 +41,14 @@
             android:id="@+id/btnEditar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="update"
             android:text="Editar" />
 
         <Button
             android:id="@+id/btnBorrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="delete"
             android:text="Borrar" />
 
         <Button
