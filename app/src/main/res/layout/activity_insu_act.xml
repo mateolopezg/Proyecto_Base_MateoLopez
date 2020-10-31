@@ -5,27 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgs"
-    tools:context=".Insumos_act">
+    tools:context=".Insu_act">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="165dp"
         android:layout_height="120dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="72dp"
         android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/base" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="331dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="12dp"
+        android:id="@+id/linearLayout4"
+        android:layout_width="246dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="39dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="insertar"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borrar" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="viewAll"
+            android:text="Mostrar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="415dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="39dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,23 +101,5 @@
             android:ems="10"
             android:hint="Ingrese Stock"
             android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="250dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/btnGuardar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Guardar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

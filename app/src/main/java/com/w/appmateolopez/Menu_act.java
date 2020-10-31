@@ -3,15 +3,12 @@ package com.w.appmateolopez;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.icu.text.IDNA;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
-
-import Clases.Item_act;
 
 public class Menu_act extends AppCompatActivity {
 
@@ -49,7 +46,7 @@ public class Menu_act extends AppCompatActivity {
     // Intent Explícito.
 
     public void CRUD(View v){
-        Intent i = new Intent(this, Item_act.class);
+        Intent i = new Intent(this, Insu_act.class);
         startActivity(i);
     }
 
@@ -59,8 +56,8 @@ public class Menu_act extends AppCompatActivity {
     }
 
     public void Info(View v) {
-        Intent i = new Intent(this, Info_act.class);
-        startActivity(i);
+      //  Intent i = new Intent(this, Info_act.class);
+        //startActivity(i);
     }
 
     public void Clientes(View v) {
